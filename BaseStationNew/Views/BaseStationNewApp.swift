@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct BaseStationNewApp: App {
+    let model = Model()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ProvidersView(model: model)
+            //RegionCell()
         }
     }
 }
